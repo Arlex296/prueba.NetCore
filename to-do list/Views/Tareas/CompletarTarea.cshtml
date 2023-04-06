@@ -1,0 +1,10 @@
+﻿@model TareaViewModel
+
+<h2>Completar Tarea</h2>
+
+<p>¿Está seguro de que desea completar la tarea?</p>
+
+<form asp-action="Completar" asp-route-id="@Model.id" method="post">
+    <input type="submit" value="Completar" class="btn btn-primary" />
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

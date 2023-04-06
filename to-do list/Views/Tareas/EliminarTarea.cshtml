@@ -1,0 +1,10 @@
+﻿@model TareaViewModel
+
+<h2>Eliminar Tarea</h2>
+
+<p>¿Está seguro de que desea eliminar la tarea @Model.id?</p>
+
+<form asp-action="Eliminar" asp-route-id="@Model.id" method="post">
+    <input type="submit" value="Eliminar" class="btn btn-danger" />
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
